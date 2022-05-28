@@ -12,7 +12,7 @@ COPY package*.json ./
 RUN npm install
 
 # Copy app source
-COPY .. .
+COPY server.js ./
 
 # Bind the port that the image will run on
 EXPOSE 8080
